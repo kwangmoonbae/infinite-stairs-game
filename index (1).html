@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Stairs Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        
+        <div id="ui">
+            <div id="score">Score: 0</div>
+            <div id="bpm">BPM: 0</div>
+            <div id="timer">Time: 0s</div>
+        </div>
+        
+        <div id="controls">
+            <button id="climbBtn" class="control-btn">CLIMB</button>
+            <button id="directionBtn" class="control-btn">TURN</button>
+        </div>
+        
+        <div id="gameOverScreen" class="hidden">
+            <h2>Game Over!</h2>
+            <p>Final Score: <span id="finalScore">0</span></p>
+            <p>Max BPM: <span id="maxBPM">0</span></p>
+            <button id="restartBtn">Play Again</button>
+        </div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
